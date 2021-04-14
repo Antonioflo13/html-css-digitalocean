@@ -25,7 +25,8 @@ h1 {
     color: white;
 }
 
-h3 {
+h3,
+h4 {
     color: #021C4E;
 }
 
@@ -42,6 +43,7 @@ p {
 body {
     font-weight: 500;
 }
+
 /* header */
 /* navbar */
 .ms_navbar {
@@ -181,12 +183,6 @@ body {
         width: 100%;
     }
 }
-@media (max-width: 768px) {
-    .ms_wrapper_60 {
-        width: 90%;
-        margin: 0 auto;
-    }
-}
 
 .ms_service ul {
     list-style: none;
@@ -196,4 +192,77 @@ body {
 
 .ms_service ul li {
     color: #838DA5;
+}
+
+.ms_service p {
+    padding-bottom: 15px;
+}
+
+.ms_service [class*=col-] {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+/* carousel */
+.ms_carousel {
+    padding-top:30px;
+    padding-bottom: 30px;
+    text-align: center;
+    background-color: #F3F5FA;
+}
+
+.ms_carousel img {
+    padding: 50px 0 10px 0;
+    width: 60%;
+}
+
+.ms_carousel figcaption {
+    color: #021C4E;
+}
+
+/* chevron */
+.ms_carousel .fa-chevron-right {
+    padding-left: 30px;
+    color: #021C4E;
+}
+
+.ms_carousel .fa-chevron-left {
+    padding-right: 30px;
+    color: #6E7B98;
+}
+
+.ms_carousel .fa-chevron-right,
+.ms_carousel .fa-chevron-left {
+    font-size: 40px;
+}
+ /* circle */
+.ms_carousel .circle {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #006AFF;
+}
+
+.ms_carousel .circle {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #006AFF;
+}
+
+.ms_carousel .circle:nth-of-type(2),
+.ms_carousel .circle:nth-of-type(3) {
+    border: 1px solid #006AFF;
+    background-color: transparent;
+}
+
+/* test speed */
+.ms_test_speed {
+    padding-top:30px;
+    padding-bottom: 30px;
+    text-align: center;
+    background: rgb(0,32,155);
+    background: linear-gradient(0deg, rgba(0,32,155,1) 0%, rgba(1,49,174,1) 54%, rgba(68,105,179,1) 100%);
 }
