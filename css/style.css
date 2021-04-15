@@ -100,6 +100,8 @@ body {
 
 .ms_navbar.navbar-default .navbar-nav>.open>a {
     border: 2px solid #006AFF;
+    padding: 14px 13px;
+    line-height: 18px;
     background-color: transparent;
 }
 /* animation_burger_icon */
@@ -178,9 +180,23 @@ body {
     text-align: center;   
 }
 /* mediaquires */
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
     .ms_partners img {
         width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) and (max-width: 1000px) {
+    .ms_carousel .fa-chevron-right {
+        display: none;
+    }
+    
+    .ms_carousel .fa-chevron-left {
+        display: none;
+    }
+
+    #ms_test_speed a {
+        font-size: 10px;
     }
 }
 
@@ -259,10 +275,60 @@ body {
 }
 
 /* test speed */
-.ms_test_speed {
+.gradient {
     padding-top:30px;
     padding-bottom: 30px;
-    text-align: center;
     background: rgb(0,32,155);
     background: linear-gradient(0deg, rgba(0,32,155,1) 0%, rgba(1,49,174,1) 54%, rgba(68,105,179,1) 100%);
 }
+
+.gradient h3,
+.gradient span {
+    color: white;
+}
+
+.gradient h4,
+.gradient p {
+    color: #A8BAE4;
+}
+
+
+.underline {
+    line-height: 10px;
+    padding-left: 10px;
+    margin-top: 15px;
+    border-bottom: 1px solid white;
+}
+
+.underline:last-of-type {
+    border: 0;
+}
+
+.ms_carousel .down {
+    display: inline-block;
+    width: 50%;
+    margin: 50px 0 30px 0;
+    padding:50px 0px 50px 0px;
+    background-color: #FFFFFF;
+}
+
+.ms_carousel .down img {
+    padding: 0px 0 10px 0;
+    width: 60%;
+}
+
+/* account */
+#ms_account {
+    text-align: center;
+}
+
+#ms_account .btn-primary {
+    font-weight: 500;
+    color: #006AFF;
+    background-color: white;
+} 
+
+#ms_account .btn-primary:hover {
+    color: white;
+    background-color: #006AFF;
+} 
