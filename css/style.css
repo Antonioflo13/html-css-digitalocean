@@ -29,6 +29,46 @@ body {
     font-weight: 500;
 }
 
+/* chat-bot */
+.bot {
+    position: fixed;
+    z-index: 3;
+    right: 2%;
+    bottom: 3%;
+    border-radius: 10%;
+    padding: 40px 50px;
+    background-image: url(../img/shark.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #006AFF;
+}
+
+.bot .badge {
+    position: absolute;
+    right: -7%;
+    top: -15%;
+    padding: 5px 10px;
+    border-radius: 50%;
+    border: 2px solid white;
+    background-color: red;
+}
+
+.chat {
+    position: fixed;
+    width: 250px;
+    height: 80px;
+    z-index: 3;
+    right: 10%;
+    bottom: 3%;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 1px 0px #33465B;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #F4F9FE;
+}
+
 /* header */
 /* navbar */
 .ms_navbar {
@@ -79,25 +119,25 @@ body {
     color: #006AFF;
 }
 
-.ms_navbar.navbar-default .navbar-nav>li>a:focus {
+.ms_navbar.navbar-default .navbar-nav>li>a:hover {
     border-bottom: 2px solid #006AFF;
 }
 
 .ms_navbar.navbar-default .navbar-nav>.open>a {
     border: 2px solid #006AFF;
     padding: 14px 13px;
-    line-height: 20px;
+    line-height: 18px;
     background-color: transparent;
 }
 /* animation_burger_icon */
-.ms_navbar.navbar-default .navbar-toggle:focus .icon-bar:nth-of-type(2) {
+.ms_navbar.navbar-default .navbar-toggle:hover .icon-bar:nth-of-type(2) {
     transition: 0.4s;
     transform: translateY(3px)rotate(45deg)
 }
-.ms_navbar.navbar-default .navbar-toggle:focus .icon-bar:nth-of-type(3) {
+.ms_navbar.navbar-default .navbar-toggle:hover .icon-bar:nth-of-type(3) {
     display: none;
 }
-.ms_navbar.navbar-default .navbar-toggle:focus .icon-bar:nth-of-type(4) {
+.ms_navbar.navbar-default .navbar-toggle:hover .icon-bar:nth-of-type(4) {
     transition: 0.4s;
     transform: translateY(-2px)rotate(-45deg)
 }
@@ -297,7 +337,6 @@ body {
     background-color: #FFFFFF;
 }
 
-wrapper
 .ms_carousel .down img {
     width: 40%;
     padding: 0px 0 20px 0;
@@ -348,6 +387,10 @@ wrapper
     color: white;
 }
 
+.ms_footer p {
+    color: #8A94AA;
+}
+
 /* mediaquires */
 @media screen and (max-width: 768px) {
     .ms_carousel .fa-chevron-right {
@@ -360,6 +403,12 @@ wrapper
 
     #ms_test_speed a {
         font-size: 10px;
+    }
+
+    .ms_carousel .down img {
+        width: 100%;
+        padding: 0px 0 20px 0;
+        margin: 0;
     }
 
     h1 {
