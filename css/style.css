@@ -331,4 +331,32 @@ body {
 #ms_account .btn-primary:hover {
     color: white;
     background-color: #006AFF;
-} 
+}
+
+/* footer */
+#footer {
+    padding-top:30px;
+    padding-bottom: 30px;
+    background-color: #021C4E;
+}
+
+#footer img {
+    margin-bottom: 10px;
+}
+
+#footer .list-inline a {
+    color: #5C6A88;
+}
+
+#footer .list-inline li {
+    padding: 0 3px;
+}
+
+#footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+#footer h4 {
+    color: white;
+}
